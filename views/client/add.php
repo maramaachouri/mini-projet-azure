@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Add_Client</title>
+    <title>Add Client !</title>
     <link rel="stylesheet" href="../../public/styles/index.css">
 </head>
 <body>
