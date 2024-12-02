@@ -1,83 +1,134 @@
 body {
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(210, 50%, 95%);
+  font-family: 'Poppins', sans-serif;
+  color: hsl(210, 15%, 25%);
+  margin: 0;
+  padding: 20px;
 }
+
 table {
-    width: 50%;
-    border-collapse: collapse;
-    margin: 20px 0;
+  width: 70%;
+  border-collapse: collapse;
+  margin: 30px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 table, th, td {
-    border: 1px solid black;
+  border: 1px solid hsl(210, 10%, 70%);
 }
 
 th, td {
-    padding: 10px;
-    text-align: left;
+  padding: 15px;
+  text-align: left;
 }
 
 th {
-    background-color: #daacca;
+  background-color: hsl(340, 60%, 85%);
+  color: hsl(340, 40%, 30%);
+  font-weight: bold;
+}
+
+td {
+  background-color: hsl(0, 0%, 100%);
 }
 
 .df-c {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 20px 0;
 }
 
 .df {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 input {
-    width: 20rem;
-    height: 2rem;
-    outline: none;
-    border: 1px solid #555;
-    border-radius: 5px;
-    font-family: inherit;
-}
-
-/* CSS */
-button {
-  background-color: #0095ff;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.15385;
-  margin: 0;
+  width: 22rem;
+  height: 2.5rem;
   outline: none;
-  padding: 8px .8em;
-  position: relative;
-  text-align: center;
+  border: 1px solid hsl(210, 10%, 70%);
+  border-radius: 8px;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: hsl(210, 70%, 50%);
+  box-shadow: 0 0 5px rgba(0, 149, 255, 0.3);
+}
+
+a {
+  display: inline-block;
+  background-color: hsl(210, 70%, 50%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 15px;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover,
-button:focus {
-  background-color: #07c;
+a:hover {
+  background-color: hsl(210, 80%, 45%);
+  transform: scale(1.05);
 }
 
-button:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+a:active {
+  background-color: hsl(210, 60%, 40%);
+}
+
+a:focus {
+  outline: 2px solid hsl(210, 80%, 55%);
+  outline-offset: 2px;
+}
+
+button {
+  background-color: hsl(210, 70%, 50%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: hsl(210, 80%, 45%);
+  transform: scale(1.05);
 }
 
 button:active {
-  background-color: #0064bd;
-  box-shadow: none;
+  background-color: hsl(210, 60%, 40%);
+}
+
+button:focus {
+  outline: 2px solid hsl(210, 80%, 55%);
+  outline-offset: 2px;
+}
+
+button.edit {
+  background-image: url('https://icons.veryicon.com/png/o/miscellaneous/linear-small-icon/edit-246.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 35px;
+}
+
+button.delete {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAACUCAMAAABcK8BVAAAAZlBMVEX///8AAADGxsb39/f8/Pzx8fEwMDDPz89VVVXj4+N5eXk5OTkICAiurq7CwsKGhoYSEhIYGBjX19ehoaE+Pj4fHx9lZWVaWlq4uLiTk5MrKytNTU2NjY2amprd3d2np6dwcHBGRkYY/DTYAAADuUlEQVR4nO2c63qiMBCGGzBgBOUgILUV6/3fZFcz0QVTcpCBPrvz/ZSEvOQ0SczM25ufeLlvkpwZVCTNueSeRXjq/GGiemi9nREsiOzBrqriuchaN7CrgnnI9u5kjM3SqLEPGWMlPplIHsXlhUF/DeEL/kD9vHNl2yA2KDhnqUp/wibjqqSDsMvQ3aeZEJfs7QTlfNlnaWYaCQdZTOXQcwTMgg0e1a0YGARnl0zv7p/jobiWxTiVImSeyLJ3emonSyncckEmXHMFNipxywUTyA6HCQRolVuu/Pei/f5am2z5EYo4eBLMA9HzkzFBrZ2en8TC2UaEu6aK6vxZyoA66edMdVQ1wcoFbOu4jH1NSWtddfwwJ9hVjeUU7rlWfEl5Z0Mm6gXQWGRRb2GxBNmfDmceDO/LkDG2N5F1asFcbzq+QhcvN2pqqU0LE1Vp9Qw7IKlYVYZpDQjJjrhrq55K6N35eDJh2/BTSrXU+CA9y0TFrKc7wmrRpMz3TFCg2qazwQb4MBMTCPZC45voRWttHG0LfQ17p92TXV8rmc0HTCx1jGKYsBac15ghXaZM2nzWgFm2lGpRVmQxD9HF47sNNS/Z7tU2t96N9cuNfwbg6GhhgJZYfzOWWq3AdwuQ5Zbb5/I4N1liVWdX8ZP5bRMq37sYH3FWZ/Dp6FtfkHpxsnWd3mE0XEzn794KoNu4HwgGMuMazdCHcHjhfn6EjsYJzUOE5iNC8xEWWtjp1jBCN69zoT+eQkILqmPyOXzSHaJjM4QLN9FRf2EBB00+2wyKuu0+okH65kdjhIMmyyv6NQTHJf3NZJnrvgIRTT5K+y/dyF+z3o/w74zufAoVrV9BWjQ4DdBtMQmN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0AiN0H4p2uX2aOAuBv4w/ZA/sbxhqgu2g4PW6sqTbsx1/5bzan37VedeiXSbeV+k+VPIhiBJ08vwcrBY52mtDZ6EdQdcBBrPpzCONde9y0Dv8vYf3pyfQP8yWoLmnM/TF9Hcol+5SEVyc/c+K8EZHc1fGsI5JO4FiEpmbRGoboJAix/uzbKCYHNoMQ2ktWNfHlnBUb5A8jIH6+oVnkO5mWfmpB5awULFry+roEAovQ08YVwDfw1y19aOwvZSzen53fyi2Cavt1aR+RobtURl+eekEy9/RCTwjhbX3F/BsjbuxATq4nbzeKvOv8pOohdL+JhMoF70tPVoY3wDvNRX9F2Rb9wAAAAASUVORK5CYII=');
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 35px;
 }

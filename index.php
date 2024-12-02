@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Project Cloud</title>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,19 +23,33 @@
             display: inline-block;
             margin-right: 15px;
             text-decoration: none;
-            color: #007bff;
-            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         .nav a:hover {
-            text-decoration: underline;
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .nav a:active {
+            background-color: #003d80;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to the Mini Project Cloud !</h1>
-    <p>Select one of the options below to manage data:</p>
+<section>
+        <h2>À propos du projet</h2>
+        <p>Ce projet a été développé par <strong>Maram Achouri</strong>  
+        </p>
+    </section>
+       
     
     <div class="nav">
         <a href="./views/client/list.php">Manage Clients</a>
