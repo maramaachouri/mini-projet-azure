@@ -31,10 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Client</title>
+    <title>Modifier le Client</title>
 </head>
 <body>
-    <h1>Edit Client</h1>
+    <h1>Modifier le Client</h1>
     <?php if ($client): ?>
         <form method="POST">
             <input type="hidden" name="id" value="<?= $client['ID_client'] ?>">
@@ -54,11 +54,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
                 ?>
             </select><br>
-            <button type="submit">Update</button>
-        </form>
-    <?php else: ?>
-        <p>Client not found.</p>
-    <?php endif; ?>
-    <a href="list.php">Back to List</a>
+    <button type="submit">Mettre à jour</button>
+</form>
+<?php else: ?>
+    <p>Client introuvable.</p>
+<?php endif; ?>
+<a href="list.php">Retour à la liste</a>
 </body>
 </html>

@@ -44,14 +44,14 @@ if (isset($_GET['search'])) {
 <body class="df-c">
     <div class="df">
         <h1>Liste des Clients</h1>
-        <a href="add.php">Add a client</a>
+        <a href="add.php">Ajouter un client</a>
     </div>
     
     <!-- Search Form -->
     <form method="GET" class="df" action="">
-        <input type="text" name="search" value="<?= htmlspecialchars($_GET['search'] ?? '') ?>" placeholder="Search by name">
-        <button type="submit">Search</button>
-        <a href="list.php">Clear</a> <!-- Clear search -->
+        <input type="text" name="search" value="<?= htmlspecialchars($_GET['search'] ?? '') ?>" placeholder="Rechercher par nom">
+        <button type="submit">Rechercher</button>
+        <a href="list.php">Effacer</a> <!-- Clear search -->
     </form>
 
     <table border="1">

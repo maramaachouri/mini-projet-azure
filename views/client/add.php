@@ -49,11 +49,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Add Client !</title>
+    <title>Ajouter un client !</title>
     <link rel="stylesheet" href="../../public/styles/index.css">
 </head>
 <body>
-    <h1>Add Client</h1>
+    <h1>Ajouter un client</h1>
     <form action="add.php" method="POST">
         <div class="df">
             <label for="nom">Nom:</label>
@@ -83,6 +83,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">Ajouter</button>
     </form>
     <br>
-    <a href="list.php">Back to List</a>
+    <a href="list.php">Retour à la liste</a>
 </body>
 </html>
